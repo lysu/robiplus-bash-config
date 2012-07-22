@@ -1,4 +1,4 @@
-export JAVA_HOME=/usr/lib/jvm/jdk1.6.0_31
+export JAVA_HOME=/usr/lib/jvm/java/jdk1.6.0_32
 export JRE=$JAVA_HOME/jre/
 export JAVA=$JAVA_HOME/bin/java
 export IDEA_HOME=/home/robiplus/idea-IU/
@@ -9,6 +9,16 @@ export LEIN=/home/robiplus/build/leiningen
 export PATH=$LEIN:$M2:$IDEA_HOME/bin:$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
 export MAVEN_OPTS=-XX:MaxPermSize=512M
 
-xrandr --output VGA1 --right-of LVDS1 --auto
+xrandr --output VGA1 --left-of LVDS1 --auto
 
 export EDITOR='emacs -nw'
+
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
+
+/usr/bin/keychain -Q -q ~/.ssh/id_dsa.
+[[ -f $HOME/.keychain/$HOSTNAME-sh ]] && source $HOME/.keychain/$HOSTNAME-sh
+
+export PATH=/home/robiplus/build:$PATH
+export NODE_PATH=/usr/lib/node_modules
+
+PS1="♫ \[\e[31m\]\t\[\e[0m\] \[\e[34m\]\j\[\e[0m\] \[\e[32m\]\u\[\e[0m\]\[\e[33m\]@\[\e[0m\]\[\e[34m\]\h\[\e[0m\] [\[\e[36m\]\w\[\e[0m\]]\n\[\033[0;35m\]♫ -> \[\e[m\]\[\e[0;32m\] "
