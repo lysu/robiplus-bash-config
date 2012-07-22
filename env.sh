@@ -21,7 +21,7 @@ export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 export PATH=/home/robiplus/build:$PATH
 export NODE_PATH=/usr/lib/node_modules
 
-PS1="♫ \[\e[31m\]\t\[\e[0m\] \[\e[34m\]\j\[\e[0m\] \[\e[32m\]\u\[\e[0m\]\[\e[33m\]@\[\e[0m\]\[\e[34m\]\h\[\e[0m\] [\[\e[36m\]\w\[\e[0m\]]\n\[\033[0;35m\]♫ -> \[\e[m\]\[\e[0;32m\] "
+PS1="\[\033[0;35m\]♫\[\e[0m\] \[\e[31m\]\t\[\e[0m\] \[\e[34m\]\j\[\e[0m\] \[\e[32m\]\u\[\e[0m\]\[\e[33m\]@\[\e[0m\]\[\e[34m\]\h\[\e[0m\] [\[\e[36m\]\w\[\e[0m\]]\n\[\033[0;35m\]♫ ->\[\e[0m\]"
 
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
