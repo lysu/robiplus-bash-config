@@ -9,6 +9,13 @@ export LEIN=/home/robiplus/build/leiningen
 export PATH=$LEIN:$M2:$IDEA_HOME/bin:$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
 export MAVEN_OPTS=-XX:MaxPermSize=512M
 
+export HISTTIMEFORMAT="%T %F "
+export HISTSIZE=9999
+export HISTFILESIZE=9999
+
+shopt -s histappend 
+PROMPT_COMMAND='history -a'
+
 xrandr --output VGA1 --left-of LVDS1 --auto
 
 export EDITOR='emacs -nw'
