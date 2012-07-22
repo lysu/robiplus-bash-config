@@ -4,7 +4,8 @@ alias suem='sudo emacs -nw'
 alias cp='cp -r'
 alias qvpnc='sudo vpnc ~/vpn.conf'
 
-alias ll='ls -l --color'
+alias ls='ls --color=auto -F'
+alias ll='ls -l --color=auto -F'
 
 alias py='python'
 alias ch='google-chrome'
